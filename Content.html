@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makanan Manado</title>
+    <style>
+        body {
+            background-color: #0b175c;
+            color: #fcf8f8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #f9f8eecd;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .food-item {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #1f2a63;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .food-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .food-item h3 {
+            margin: 10px 0;
+            font-size: 10px;
+            color: #f9f8eecd;
+        }
+
+        .form-group {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="submit"], input[type="reset"] {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #fcf8f8;
+            color: #0b175c;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #ddd;
+        }
+
+        .food-checkbox {
+            margin: 10px 0;
+        }
+
+        .food-checkbox label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        hr {
+            border: 1px solid #fcf8f8;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu Makanan Manado</h1>
+        <div class="content">
+            <div class="food-item">
+                <img src="C:\Users\MY LENOVO\Documents\g1.jpg" width="255px">
+                <hr color="black">
+                <h3>Tinutuan</h3>
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\MY LENOVO\Documents\g2.jpg" width="255px">
+                <hr color="black">    
+                <h3>Mie Cakalang</h3>
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\MY LENOVO\Documents\g6.jpg" width="255px">
+                <hr color="black">
+                <h3>Naskun Cakalang</h3>
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\MY LENOVO\Documents\g4.jpg" width="255px">
+                <hr color="black">    
+                <h3>Ayam Garo Rica</h3>
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\MY LENOVO\Documents\g5.jpg" width="255px">
+                <hr color="black">    
+                <h3>Rahang Tuna Bakar</h3>
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\MY LENOVO\OneDrive\Documents\TUGAS KULIAH\tugas KATI\g3 baru.jpg" width="255px">
+                <hr color="black">    
+                <h3>Ikan Bakar Garo Rica</h3>
+            </div>
+        </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("order-form");
+
+            form.addEventListener("submit", function(event) {
+                const name = document.getElementById("name").value;
+                const address = document.getElementById("address").value;
+
+                if (name === "" || address === "") {
+                    alert("Nama dan Alamat harus diisi.");
+                    event.preventDefault(); // Prevent form submission if validation fails
+                } else {
+                    console.log("Form submitted with name:", name, "and address:", address);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

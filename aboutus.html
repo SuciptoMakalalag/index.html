@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya</title>
+    <style>
+        body {
+            background-color: #0b175c;
+            color: #fcf8f8;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #fcf8f8;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 50%;
+            color: #fcf8f8;
+        }
+
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        b {
+            font-weight: bold;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 255px;
+            border-radius: 10px;
+        }
+
+        hr {
+            border: 1px solid #fcf8f8;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h3>TENTANG SAYA</h3>
+    <hr>
+    <table>
+        <tr>
+            <td><b>NAMA</b></td>
+            <td><b>:SUCIPTO MAKALALAG</b></td>
+        </tr>
+        <tr>
+            <td><b>KELAS</b></td>
+            <td><b>:INFORMATION SYSTEM 5</b></td>
+        </tr>
+        <tr>
+            <td><b>NIM</b></td>
+            <td><b>:10523193</b></td>
+        </tr>
+    </table>
+    <hr>
+    <img id="profile-pic" src="c:\Users\MY LENOVO\Downloads\WhatsApp Image 2024-05-26 at 15.57.20.jpeg" alt="Profile Picture">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const img = document.getElementById("profile-pic");
+            img.addEventListener("click", function() {
+                alert("Gambar Profil Diklik!");
+            });
+        });
+    </script>
+</body>
+</html>
